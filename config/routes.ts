@@ -43,6 +43,22 @@
     component: './TableList',
   },
   {
+    path: '/kodoTest',
+    name: 'kodoTest',
+    icon: 'customerService',
+    routes: [
+      {
+        path: '/kodoTest/test1',
+        name: 'test1',
+        icon: 'smile',
+        component: './kodoTest',
+      },
+      {
+        component: './404',
+      },
+    ],
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },
