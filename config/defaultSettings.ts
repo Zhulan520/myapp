@@ -8,6 +8,8 @@ const Settings: LayoutSettings & {
   // 拂晓蓝
   primaryColor: '#1890ff',
   layout: 'mix',
+  // 菜单于顶部和左侧混合展示
+  // splitMenus: true,
   contentWidth: 'Fluid',
   fixedHeader: false,
   fixSiderbar: true,

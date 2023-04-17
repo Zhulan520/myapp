@@ -31,8 +31,9 @@
         icon: 'smile',
         component: './Welcome',
       },
+      // layout为mix,点击一级菜单，并不会直接定位到第一个子级菜单页面，而是会呈现空白页面，因此需要重定向
       {
-        component: './404',
+        redirect: '/admin/sub-page',
       },
     ],
   },
@@ -53,8 +54,11 @@
         icon: 'smile',
         component: './kodoTest',
       },
+      // {
+      //   component: './404',
+      // },
       {
-        component: './404',
+        redirect: '/kodoTest/test1',
       },
     ],
   },

@@ -15,10 +15,17 @@ export default defineConfig({
     hmr: true,
   },
   layout: {
-    // https://umijs.org/zh-CN/plugins/plugin-layout
+    navTheme: 'dark',
+    primaryColor: '#52C41A',
+    layout: 'side',
+    contentWidth: 'Fluid',
+    fixedHeader: false,
+    fixSiderbar: true,
+    pwa: false,
+    logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+    headerHeight: 48,
+    splitMenus: false,
     locale: true,
-    siderWidth: 208,
-    ...defaultSettings,
   },
   // https://umijs.org/zh-CN/plugins/plugin-locale
   locale: {

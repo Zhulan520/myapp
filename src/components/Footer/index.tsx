@@ -1,35 +1,29 @@
-import { GithubOutlined } from '@ant-design/icons';
+import { GithubOutlined, RedditOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
 import { useIntl } from 'umi';
 
 const Footer: React.FC = () => {
-  const intl = useIntl();
-  const defaultMessage = intl.formatMessage({
-    id: 'app.copyright.produced',
-    defaultMessage: '蚂蚁集团体验技术部出品',
-  });
-
   const currentYear = new Date().getFullYear();
 
   return (
     <DefaultFooter
-      copyright={`${currentYear} ${defaultMessage}`}
+      copyright={`${currentYear} 浮生为卿歌`}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
+          key: '朱青衣',
+          title: '朱青衣',
           href: 'https://pro.ant.design',
           blankTarget: true,
         },
         {
           key: 'github',
-          title: <GithubOutlined />,
+          title: <RedditOutlined />,
           href: 'https://github.com/ant-design/ant-design-pro',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
+          key: '墨白裳',
+          title: '墨白裳',
           href: 'https://ant.design',
           blankTarget: true,
         },
