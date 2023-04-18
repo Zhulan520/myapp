@@ -52,7 +52,14 @@
         path: '/kodoTest/test1',
         name: 'test1',
         icon: 'smile',
-        component: './kodoTest',
+        component: './kodoTest/Test1',
+        access: 'normalRouteFilter', // 会调用 src/access.ts 中返回的 adminRouteFilter 进行鉴权
+      },
+      {
+        path: '/kodoTest/test2',
+        name: 'test2',
+        icon: 'smile',
+        component: './kodoTest/Test2',
       },
       // {
       //   component: './404',
